@@ -1,0 +1,606 @@
+body{
+    background-color: #f5fcee;
+}
+.header-logo {
+    max-height: 125px;
+    max-width: 190px;
+}
+
+.nav-section .bg-light{
+    background-color: #faecec !important;
+    border-radius: 5px;
+}
+
+/* Ensure the slider section has relative positioning */
+.slider-section {
+    position: relative;
+}
+
+/* Position navbar at the top of the slider */
+.navbar-section {
+    position: absolute;
+    top: 0; /* Align to the top of the slider */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 10; /* Keep it above the slider */
+    width: 100%; /* Full width */
+}
+
+/* Navbar styling */
+.nav-section .navbar {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for modern look */
+    padding: 15px 20px;
+    border-radius: 5px; /* No rounded edges */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-section {
+        top: 0; /* Keep it fixed at the top */
+        width: 100%;
+    }
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.welcom-section,
+.why-choose-us-section,
+.blog-section {
+    color: rgb(0, 0, 0);
+    font-family: ui-monospace;
+}
+
+.welcom-section ul,.about-us-section ul, .contact-us-section ul {
+    margin-left: 40px;
+}
+
+.welcom-section ul li,.about-us-section ul li, .contact-us-section ul li {
+    display: flex;
+    align-items: flex-start;
+    /* Align icon and text at the top of the line */
+    font-size: 18px;
+    text-align: justify;
+}
+
+.welcom-section ul li i,.about-us-section ul li i {
+    font-size: 1rem;
+    /* Adjust the size of the icon */
+    line-height: 1;
+    /* Ensure icon alignment with text */
+    margin-top: 0.2rem;
+    /* Fine-tune vertical position of the icon */
+    margin-right: 17px;
+    color: #65d265;
+}
+
+.welcom-section ul li b,
+ul li span {
+    line-height: 1.5;
+    /* Adjust spacing for text readability */
+    margin: 0;
+    /* Reset margin for better alignment */
+}
+
+.why-choose-us-section .card {
+    height: 330px;
+}
+
+
+.why-choose-us-section .card-image .quality-image {
+    height: 105px;
+    width: 80px;
+}
+
+.why-choose-us-section .card-image .other-image {
+    height: 105px;
+    width: 109px;
+}
+
+.why-choose-us-section ul li {
+    text-align: center;
+    padding: 2px;
+}
+
+.why-choose-us-section .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.why-choose-us-section img {
+    width: 80px;
+    height: 80px;
+}
+
+.why-choose-us-section p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Make sure cards stack well on small screens */
+@media (max-width: 768px) {
+    .why-choose-us-section .card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .why-choose-us-section img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .why-choose-us-section h5 {
+        font-size: 1rem;
+    }
+
+    .why-choose-us-section p {
+        font-size: 0.85rem;
+    }
+}
+
+/* .blog-section .ashwagandha-image,
+.herbs-image,
+.boostingimmunity-image {
+    height: 300px;
+    width: 300px;
+} */
+
+.blog-section .card {
+    border: 0px;
+}
+
+.blog-section .card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-section img {
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog-section .btn {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.load-more-btn a {
+    font-size: 18px;
+}
+
+.load-more-btn a:hover {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+
+/* General Styles */
+.testimonial-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Divider with Star Icon */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+.divider hr {
+    width: 60px;
+    border: 2px solid #28a745;
+}
+.divider i {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Testimonial Card */
+figure.testimonial {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+figure.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+figure.testimonial .profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #28a745;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Text Formatting */
+figure.testimonial h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+figure.testimonial h4 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+figure.testimonial blockquote {
+    font-size: 16px;
+    color: #555;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-style: italic;
+    position: relative;
+    text-align: left;
+    box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote Icon */
+figure.testimonial blockquote:before {
+    content: "\201C";
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    color: #28a745;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    figure.testimonial {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-section footer{
+    background-color: #ace7c3;
+    height: 210px;
+}
+
+.footer-section .social-media-icon ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-top: 35px;
+}
+
+.footer-section .social-media-icon ul li{
+    padding: 10px;
+}
+
+.footer-section .social-media-icon ul li i{
+    font-size: 22px;
+    color: #363636;
+    background-color: #ffffff;
+    /* border: 5px solid lightgreen; */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.footer-section .copy-right{
+    margin-top: 40px;
+}
+
+.footer-section .copy-right h5{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* General Section Styling */
+.about-us-section {
+    background-color: #f7f7d2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.about-us-section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    font-size: 36px;
+}
+
+.about-us-section .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.about-us-section .divider .line {
+    width: 20%;
+    border: 0;
+    height: 2px;
+    background-color: #28a745;
+    margin: 0 10px;
+}
+
+.about-us-section .divider i {
+    font-size: 24px;
+    color: #28a745;
+}
+
+.about-us-section ul {
+    padding-left: 0;
+}
+
+/* List Items Styling */
+.about-us-section ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-us-section ul li i {
+    color: #28a745;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Image Styling */
+.about-us-section .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.about-us-section img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-section h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about-us-section ul li {
+        font-size: 14px;
+    }
+
+    .about-us-section .img-div {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .about-us-section img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-us-section .divider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-section .divider .line {
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    .about-us-section .divider i {
+        margin: 10px 0;
+    }
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Divider with Star */
+.contact-us-section .divider {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+}
+.contact-us-section .divider hr {
+    width: 50px;
+    border: 2px solid #28a745;
+}
+.contact-us-section .divider i {
+    font-size: 16px;
+    margin: 0 10px;
+    color: #28a745;
+}
+
+/* Contact List */
+.contact-list li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.contact-list li:hover {
+    transform: translateX(5px);
+}
+
+/* Icon Styling */
+.contact-us-section  .icon-container {
+    width: 50px;
+    height: 50px;
+    background: #28a745;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Contact Image */
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us-section .contact-us-section {
+        text-align: center;
+    }
+
+    .contact-us-section .contact-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-us-section .icon-container {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* General Section Styling */
+.services-section {
+    background-color: #d8ebec;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Divider with Star */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+.divider hr {
+    width: 60px;
+    border: 2px solid #28a745;
+}
+.divider i {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Service Card */
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Image */
+.service-image {
+    width: 100%;
+    max-width: 220px;
+    height: 160px;  /* Fixed height to ensure uniformity */
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+/* Service Content */
+.service-content {
+    flex-grow: 1;
+}
+
+.service-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Initially hidden */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Show elements when they appear in viewport */
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
